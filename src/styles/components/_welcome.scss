@@ -34,6 +34,8 @@
         padding: 0.25em;
       }
     }
+  }
+
 
     .welcome__actions {
       @include tablet {
@@ -43,18 +45,11 @@
       .welcome__cta {
         background-color: $button-featured-color;
         color: white;
-        font-weight: 900;
-        font-size: 2em;
       }
 
       .welcome__more {
         background-color: $main-background-color;
-        font-size: 2em;
-        font-weight: 900;
         color: $main-font-color;
       }
-
-
     }
   }
-}

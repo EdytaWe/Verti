@@ -58,6 +58,15 @@ table {
   border-spacing: 0;
 }
 
+button {
+  background-color: transparent;
+  border: none;
+  padding: 0.75em 1em;
+  margin: 0.5em 0;
+  width: 100%;
+  border-radius: 6px;
+}
+
 .container {
   width: 100%;
   max-width: 990px;
@@ -175,18 +184,128 @@ body {
 }
 
 body {
-  background-color: #E4E4E4;
+  background-color: #e4e4e4;
+  color: #444444;
+  padding: 2.5em;
 }
 
-h1 {
+a {
+  color: #444444;
+}
+
+header {
+  height: 35vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (min-width: 1000px) {
+  header {
+    justify-content: space-between;
+  }
+}
+@media screen and (min-width: 1250px) {
+  header {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}
+header .logo {
   color: white;
-  background-color: #FC4887;
+  background-color: #fc4887;
   padding: 0.2em;
   display: inline-block;
   border-radius: 7px;
-  font-size: 3em;
+  font-size: 2.5em;
   font-family: "Oleo Script", cursive;
   letter-spacing: 0.1em;
   font-weight: normal;
+}
+header .menu {
+  display: none;
+}
+@media screen and (min-width: 1000px) {
+  header .menu {
+    display: flex;
+  }
+}
+header .menu .menu__item {
+  padding: 1em 2em;
+  margin: 0.5em 1em;
+  border-radius: 0.5em;
+}
+header .menu .menu__item__featured {
+  background-color: #444444;
+}
+header .menu .menu__item__featured a {
+  color: white;
+}
+header .menu .menu__link {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.welcome {
+  margin-top: 2em;
+  background-color: white;
+  border-radius: 7px;
+  box-shadow: 0 3px 0 0 black;
+  padding: 3em;
+}
+@media screen and (min-width: 1250px) {
+  .welcome {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .welcome {
+    display: flex;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .welcome .welcome__content {
+    width: 180%;
+  }
+}
+.welcome .welcome__content .welcome__title {
+  padding-top: 1em;
+  font-size: 3.5em;
+  text-align: center;
+}
+@media screen and (min-width: 1000px) {
+  .welcome .welcome__content .welcome__title {
+    text-align: left;
+    padding: 0.25em;
+  }
+}
+.welcome .welcome__content .welcome__description {
+  padding: 0.5em 0;
+  font-size: 2.75em;
+  text-align: center;
+  line-height: 1.25em;
+}
+@media screen and (min-width: 1000px) {
+  .welcome .welcome__content .welcome__description {
+    text-align: left;
+    padding: 0.25em;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .welcome .welcome__content .welcome__actions {
+    width: 100%;
+  }
+}
+.welcome .welcome__content .welcome__actions .welcome__cta {
+  background-color: #1691C3;
+  color: white;
+  font-weight: 900;
+  font-size: 2em;
+}
+.welcome .welcome__content .welcome__actions .welcome__more {
+  background-color: #e4e4e4;
+  font-size: 2em;
+  font-weight: 900;
+  color: #444444;
 }
 /*# sourceMappingURL=style.css.map */
